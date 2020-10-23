@@ -1,0 +1,28 @@
+
+TODO:
+  @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py
+    ✔ #TODO: Start @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#2 @started(20-10-23 10:39) @done(20-10-23 10:57) @lasted(18m45s)
+    ✔ #TODO: Store PID in runner.pid @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#3 @done(20-10-23 10:57)
+    ✔ #TODO: Read Config File @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#4 @started(20-10-23 11:01) @done(20-10-23 11:23) @lasted(22m18s)
+    ☐ #TODO: Check for errors @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#5
+    ☐ #TODO: Build a list of "run" records that specifies a time and program to run. @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#6
+    ☐ #TODO: Define up the function to catch the USR1 signal and print run records @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#7
+    ☐ #TODO: Sort run records by time @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#8
+    ☐ #TODO: Start Background Process @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#9
+    ☐ #TODO: Take the next record off the list and wait for that time, then run the program @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#10
+    ☐ #TODO: Add a record to the "result" list @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#11
+    ☐ #TODO: If this was an "every" record", add an adjusted record to the "run" list @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#12
+    ☐ #TODO: Repeat until no more to records on the "run" list @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#13
+    ☐ #TODO: Exit @file:///home/ashtamkar/bookmarks/py-schedutil/runner.py#14
+  @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py
+    ☐ #TODO: Start @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py#2
+    ☐ #TODO: Read PID from runner.pid @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py#3
+    ☐ #TODO: Give an error message if file not found or bad pid @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py#4
+    ☐ #TODO: Send USR1 Signal to runner.py (Through PID) @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py#5
+    ☐ #TODO: Read runner.status @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py#6
+    ☐ #TODO: Give output @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py#7
+    ☐ #TODO: Open runner.status @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py#8
+    ☐ #TODO: If Errors Retry for 5 seconds.  @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py#9
+    ☐ #TODO: Truncate the File to zero length @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py#10
+    ☐ #TODO: Close File @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py#11
+    ☐ #TODO: Stop @file:///home/ashtamkar/bookmarks/py-schedutil/runstatus.py#12
