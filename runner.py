@@ -24,9 +24,13 @@ import signal
 
 class Command:
     def __init__(self, timespec, programPath, parameters):
-        timespec    = timespec
-        programPath = programPath
-        parameters  = parameters
+        self.timespec    = timespec
+        self.programPath = programPath
+        self.parameters  = parameters
+    def __str__(self) -> str:
+        return f" {self.timespec} | {self.programPath} | {self.parameters}"
+
+
 
 runRecords = []
 
@@ -42,16 +46,19 @@ if __name__ == "__main__":
 
         while len(line) > 0:
             run = line.index('run')
-            if line[run+1:]:
+
+            if len(line[run+1:])<=1:
                 params = ''
             else:
-                params = ' '.join(line[run+1:])
+                params = ' '.join(line[run+2:])
             
             runRecords.append(
                 Command(
                     timespec    = line[0:run],
-                    programPath = line[run],
+                    programPath = line[run+1],
                     parameters  = params
                 )
             )
             line = configFile.readline().strip().split()
+        
+    print(*runRecords, sep="\n")
